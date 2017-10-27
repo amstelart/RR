@@ -8,6 +8,8 @@
 
   @include row;
 
+  margin-bottom: 20px;
+
   &__info {
     @include make-col(5);
   }
