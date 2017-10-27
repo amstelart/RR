@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Рекламные решения</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header" role="banner">
+        <div class="header-top">
+          <div class="header-top__inner">
+
+            <div class="header-top__contacts"><svg class="icon icon--phone" width="15" height="17"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use></svg> +7 (4712) 58-50-50</div>
+
+            <ul class="menu menu--header">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Наши клиенты</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Наши работы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Полезная информация</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Производства</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Каталоги</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Контакты</a>
+              </li>
+            </ul>
+
+          </div>
+
+
+        </div>
+
+        <div class="header-nav">
+    
+          <div class="header-nav__inner">
+            <div class="header-nav__logo">
+              <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="logo">
+              </a>
+            </div>
+
+            <ul class="menu menu--main">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Полиграфическая продукция</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Пластиковые карты</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Сувенирная и наградная продукция</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Печати и штампы</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </header>
+
+
+      <main class="page__container" role="main">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Наши работы</a></li>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__link">Курскпромбанк</span></li>
+        </ul>
+        <div class="page__heading">
+          <h1 class="page__title">Курскпромбанк</h1>
+        </div>
+
+        <p>Текст описания производимых работ. В среде специалистов рекламного бизнеса принято считать, что рекламно-сувенирная продукция
+        обязана своим появлением одному из коммивояжеров американской страховой компании</p>
+        <p></p>
+
+
+      </main>
+
+      <div class="page__carousel-wrap">
+        <div class="page__container">
+          <div class="owl-carousel" id="page-portfolio-carousel">
+            <div class="p-card">
+              <div class="card-image" style="background-image: url(img/catalog-demo-img-02.jpg);"></div>
+              <div class="card-body">
+                <div class="card-title">Визитка для компании «Банк»</div>
+              </div>
+            </div>
+            <div class="p-card">
+              <div class="card-image" style="background-image: url(img/catalog-demo-img-02.jpg);"></div>
+              <div class="card-body">
+                <div class="card-title">Буклет для компании «Курское молоко»</div>
+              </div>
+            </div>
+            <div class="p-card">
+              <div class="card-image" style="background-image: url(img/catalog-demo-img-02.jpg);"></div>
+              <div class="card-body">
+                <div class="card-title">Листовка для компании «Озеленение регионов страны»</div>
+              </div>
+            </div>
+            <div class="p-card">
+              <div class="card-image" style="background-image: url(img/catalog-demo-img-02.jpg);"></div>
+              <div class="card-body">
+                <div class="card-title">Буклет для компании «Курское молоко»</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-section main-section--clients">
+        <div class="page__container">
+          <div class="main-section__header">
+            <h2 class="main-section__title">Наши клиенты</h2>
+          </div>
+          <div class="clients">
+            <div class="clients__item">
+              <div class="clients__logo">
+                <img src="img/client-logo-01.jpg" alt="">
+              </div>
+            </div>
+            <div class="clients__item">
+              <div class="clients__logo">
+                <img src="img/client-logo-02.jpg" alt="">
+              </div>
+            </div>
+            <div class="clients__item">
+              <div class="clients__logo">
+                <img src="img/client-logo-03.jpg" alt="">
+              </div>
+            </div>
+            <div class="clients__item">
+              <div class="clients__logo">
+                <img src="img/client-logo-04.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      <div class="feedback-section" style="background-image: url(img/feedback-section-bg.jpg);">
+        <div class="feedback-section__inner">
+
+          <div class="feedback-section__header">
+            <h2 class="feedback-section__title">Возникли вопросы?</h2>
+            <p class="feedback-section__caption">Для получения подробной информаци звоните нам по тел.: +7 015 913 23 41 или оставьте заявку</p>
+          </div>
+
+          <form action="" class="form form--feedback" method="post">
+
+            <label class="field-text">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="text" placeholder="Имя">
+              </span>
+            </label>
+            <label class="field-text">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="tel" placeholder="Телефон">
+              </span>
+            </label>
+            <div class="field-btn">
+              <button class="btn btn--main">Оставить заявку</button>
+            </div>
+
+
+            <div class="field-conf">
+              <p class="field-conf__text">При отправлении заявки вы соглашаетесь на обработку персональных данных</p>
+              <a class="field-conf__link" href="#">Политика конфиденциальности</a>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__main">
+          <div class="page-footer__wrap">
+            <div class="page-footer__inner">
+              <div class="page-footer__logo">
+                <a href="index.html" class="logo">
+                  <img src="img/logo.svg" alt="logo">
+                </a>
+              </div>
+              <div class="page-footer__info">
+                <div class="page-footer__nav">
+                  <ul class="menu menu--footer">
+                    <li class="menu__item">
+                      <a class="menu__link" href="#">Наши клиенты</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="#">Наши работы</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="#">Полезная информация</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="#">Производства</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="#">Каталоги</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="page-footer__contacts">
+
+                  <span><svg class="icon icon--marker" width="11" height="17"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-marker"></use></svg> г. Курск, ул. К. Маркса, 59а 3 этаж, офис 43в</span>
+                  <span><svg class="icon icon--phone" width="15" height="17"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use></svg> +7 (4712) 58-50-50</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__bottom">
+          <div class="page-footer__wrap">
+            <div class="page-footer__inner">
+              <p>Разработка — <a href="http://www.2showbiz.ru/">Showbiz Studio</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
