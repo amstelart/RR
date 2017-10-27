@@ -1,0 +1,42 @@
+// В этом файле должны быть стили для БЭМ-блока blog, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.blog {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin-right: 390px;
+
+  &__post {
+    margin-bottom: 3.6em;
+  }
+  &__post-date {
+    color: #727272;
+    margin-bottom: 0.4em;
+  }
+  &__post-title {
+
+    margin-top: 0;
+    a {
+      color: #000;
+      display: block;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $color-main;
+      }
+    }
+  }
+  &__post-content {
+    color: #727272;
+  }
+  &__post-image {
+    a,
+    img {
+      display: block;
+    }
+  }
+
+}

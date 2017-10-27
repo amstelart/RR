@@ -75,7 +75,8 @@
     "polygraphic": [],
     "team": [],
     "t-card": [],
-    "contacts": []
+    "contacts": [],
+    "blog": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
