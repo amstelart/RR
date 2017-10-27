@@ -62,4 +62,21 @@ $( document ).ready(function() {
     }
   });
 
+  // Яндекс карты в контактах
+  var myMap;
+
+  ymaps.ready(function () {
+      myMap = new ymaps.Map("contactsMap", {
+          center: [51.758862, 36.186805],
+          zoom: 17
+      });
+      myGeoObject = new ymaps.GeoObject({
+          geometry: {
+              type: "Point",// тип геометрии - точка
+              coordinates: [51.758862, 36.187805] // координаты точки
+         }
+      });
+      myMap.geoObjects.add(myGeoObject); // Размещение геообъекта на карте.
+  });
+
 });

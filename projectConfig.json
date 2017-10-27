@@ -72,7 +72,10 @@
     "gallery": [],
     "m-card": [],
     "materials": [],
-    "polygraphic": []
+    "polygraphic": [],
+    "team": [],
+    "t-card": [],
+    "contacts": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

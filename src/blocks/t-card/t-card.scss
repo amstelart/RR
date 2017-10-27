@@ -1,0 +1,33 @@
+// В этом файле должны быть стили для БЭМ-блока t-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.t-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__image {
+    width: 100%;
+    padding-bottom: 70%;
+    background-size: cover;
+    margin-bottom: 1.5em;
+    color: #252525;
+  }
+  &__name {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    font-weight: 700;
+  }
+  &__caption {
+    font-size: 1em;
+    color: #727272;
+    margin-bottom: 0.7em;
+  }
+  &__info {
+    p {
+      margin: 0;
+      font-size: 1em;
+    }
+  }
+
+}
