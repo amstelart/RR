@@ -1,0 +1,30 @@
+// В этом файле должны быть стили для БЭМ-блока polygraphic, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.polygraphic {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__item {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        margin-bottom: 8px;
+        a {
+          display: inline-block;
+          color: #0645ad;
+          padding: 3px 0;
+
+          &:hover,
+          &:focus {
+            color: $color-main;
+          }
+        }
+      }
+    }
+  }
+
+}
