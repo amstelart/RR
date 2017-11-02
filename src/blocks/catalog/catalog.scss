@@ -11,12 +11,16 @@
   &__card {
     @include make-col(4);
     margin-bottom: 30px;
+    @media (max-width: ($menu-desktop-width - 1)) {
+      @include make-col(12);
+    }
     .card-link {
       text-decoration: none;
       color: inherit;
       display: block;
       overflow: hidden;
       border-radius: 5px;
+      transition: all $transition-time;
       &:hover,
       &:focus {
         box-shadow: 0px 0px 8.5px 1.5px rgba(0, 0, 0, 0.3);

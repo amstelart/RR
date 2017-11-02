@@ -31,4 +31,17 @@
     font-size: 16px;
     line-height: 1.4;
   }
+  @media (max-width: ($menu-desktop-width - 1)) {
+    &__link {
+      display: flex;
+      align-items: flex-end;
+      text-align: left;
+    }
+    &__icon {
+      margin: 0 15px 0 0;
+      min-width: 30px;
+      width: 30px;
+      height: auto;
+    }
+  }
 }

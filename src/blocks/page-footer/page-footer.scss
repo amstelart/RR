@@ -17,16 +17,31 @@
   }
   &__logo {
     @include make-col(3);
+    @media (max-width: ($menu-desktop-width - 1)) {
+      @include make-col(12);
+      .logo {
+        margin: auto;
+      }
+    }
   }
   &__info {
     @include make-col(9);
+    @media (max-width: ($menu-desktop-width - 1)) {
+      margin-top: 25px;
+      @include make-col(12);
+    }
   }
   &__nav {
     margin-bottom: 20px;
-    
+    @media (max-width: ($menu-desktop-width - 1)) {
+      display: none;
+    }
   }
   &__bottom {
-
+    text-align: right;
+    @media (max-width: ($menu-desktop-width - 1)) {
+      text-align: center;
+    }
   }
   &__contacts {
     text-align: right;
@@ -37,6 +52,16 @@
       }
       .icon {
         vertical-align: middle;
+      }
+    }
+    @media (max-width: ($menu-desktop-width - 1)) {
+      span {
+        display: block;
+        text-align: center;
+        &:not(:last-of-type) {
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
       }
     }
   }

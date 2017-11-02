@@ -44,7 +44,7 @@ const isDev = !process.env.NODE_ENV || process.env.NODE_ENV == 'dev';
 // Плагины postCSS, которыми обрабатываются все стилевые файлы
 let postCssPlugins = [
   autoprefixer({
-    browsers: ['last 2 version']
+    browsers: ['last 3 version']
   }),
   mqpacker({
     sort: true

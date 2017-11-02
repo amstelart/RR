@@ -178,6 +178,18 @@ body {
   color: $text-color;
 }
 
+a {
+  color: #444;
+  transition: color $transition-time;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-main;
+    text-decoration: none;
+  }
+}
+
 // .h1,
 // .h2,
 // .h3,

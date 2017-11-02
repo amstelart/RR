@@ -1,9 +1,23 @@
-// В этом файле должны быть стили для БЭМ-блока main-header, его элементов, 
+// В этом файле должны быть стили для БЭМ-блока main-header, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .main-header {
 
   $block-name:                &; // #{$block-name}__element
+
+  @media (max-width: ($menu-desktop-width - 1)) {
+    .header-nav {
+      @include container;
+      &__logo {
+        margin: auto;
+      }
+    }
+    .header-top,
+    .menu.menu--main {
+      display: none;
+    }
+
+  }
 
 }

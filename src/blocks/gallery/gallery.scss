@@ -11,6 +11,9 @@
   .p-card {
     @include make-col(4);
     margin-bottom: 30px;
+    @media (max-width: ($menu-desktop-width - 1)) {
+      @include make-col(12);
+    }
   }
 
 }

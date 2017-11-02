@@ -7,6 +7,9 @@
   $block-name:                &; // #{$block-name}__element
 
   margin-right: 390px;
+  @media (max-width: ($menu-desktop-width - 1)) {
+    margin-right: 0;
+  }
 
   &__post {
     margin-bottom: 3.6em;

@@ -2,6 +2,15 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
+.main-nav-toggler {
+  position: absolute !important;
+  z-index: 100;
+  display: none !important;
+  @media (max-width: ($menu-desktop-width - 1)) {
+    display: block !important;
+  }
+}
+
 .page-header {
 
   $block-name:                &; // #{$block-name}__element
@@ -16,6 +25,9 @@
       justify-content: space-between;
       align-items: center;
     }
+    @media (max-width: ($menu-desktop-width - 1)) {
+      display: none;
+    }
   }
 
   .header-nav {
@@ -27,5 +39,16 @@
       justify-content: space-between;
       align-items: center;
     }
+    @media (max-width: ($menu-desktop-width - 1)) {
+      .menu.menu--main {
+        display: none;
+      }
+      .header-nav__logo {
+        margin: 0 auto;
+      }
+    }
   }
+
+
+
 }

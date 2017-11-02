@@ -10,7 +10,7 @@
 
 <body>
 
-  <div class="main__inner">
+  <div class="main__inner" id="page">
 
     <div class="main__content">
 
@@ -46,6 +46,7 @@
 
         <div class="header-nav">
           <div class="header-nav__inner">
+            <a class="burger main-nav-toggler" href="#menu"><span></span></a>
             <div class="header-nav__logo">
               <a href="index.html" class="logo">
                 <img src="img/logo.svg" alt="logo">
@@ -107,7 +108,7 @@
         </div>
         <div class="catalog">
           <div class="catalog__card">
-            <a href="#" class="card-link">
+            <a href="page-polygraphic.html" class="card-link">
               <div class="card-image" style="background-image: url(img/catalog-demo-img-01.jpg);"></div>
               <div class="card-body">
                 <div class="card-title">Цветная печать</div>
@@ -119,7 +120,7 @@
             </a>
           </div>
           <div class="catalog__card">
-            <a href="#" class="card-link">
+            <a href="page-polygraphic.html" class="card-link">
               <div class="card-image" style="background-image: url(img/catalog-demo-img-02.jpg);"></div>
               <div class="card-body">
                 <div class="card-title">Широкоформатная печать</div>
@@ -131,7 +132,7 @@
             </a>
           </div>
           <div class="catalog__card">
-            <a href="#" class="card-link">
+            <a href="page-polygraphic.html" class="card-link">
               <div class="card-image" style="background-image: url(img/catalog-demo-img-01.jpg);"></div>
               <div class="card-body">
                 <div class="card-title">УФ-печать</div>
@@ -143,7 +144,7 @@
             </a>
           </div>
           <div class="catalog__card">
-            <a href="#" class="card-link">
+            <a href="page-polygraphic.html" class="card-link">
               <div class="card-image" style="background-image: url(img/catalog-demo-img-02.jpg);"></div>
               <div class="card-body">
                 <div class="card-title">Пластиковые карты</div>
@@ -155,7 +156,7 @@
             </a>
           </div>
           <div class="catalog__card">
-            <a href="#" class="card-link">
+            <a href="page-polygraphic.html" class="card-link">
               <div class="card-image" style="background-image: url(img/catalog-demo-img-01.jpg);"></div>
               <div class="card-body">
                 <div class="card-title">Сувенирная продукция</div>
@@ -167,7 +168,7 @@
             </a>
           </div>
           <div class="catalog__card">
-            <a href="#" class="card-link">
+            <a href="page-polygraphic.html" class="card-link">
               <div class="card-image" style="background-image: url(img/catalog-demo-img-02.jpg);"></div>
               <div class="card-body">
                 <div class="card-title">Печати и штампы</div>
@@ -318,6 +319,8 @@
     </div>
 
   </div>
+
+  @@include('blocks/canvas-nav/canvas-nav.html')
 
   @@include('_include/page_bottom.html')
 </body>
