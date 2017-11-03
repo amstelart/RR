@@ -77,7 +77,8 @@
     "t-card": [],
     "contacts": [],
     "blog": [],
-    "canvas-nav": []
+    "canvas-nav": [],
+    "modals": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

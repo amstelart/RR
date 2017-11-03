@@ -46,7 +46,7 @@ $z-index-modal:               100 !default;
     height: 100%;
 
     @media (min-width: $screen-lg) {
-      width: 600px;
+      width: 750px;
       height: auto;
 
       #{$block-name}--open & {
@@ -66,17 +66,26 @@ $z-index-modal:               100 !default;
   }
 
   &__header {
-    padding: 5px 40px 0 10px;
+    padding: 15px 40px 0 10px;
     flex-shrink: 0;
+    text-align: center;
   }
 
   &__title {
     margin-top: ($line-height / 2);
-    margin-bottom: ($line-height / 2);
-    font-size: $font-size--h4;
+    margin-bottom: ($line-height/ 4);
+    font-size: 30px;
     line-height: 1.4;
     font-weight: 700;
     color: currentColor;
+    text-transform: uppercase;
+  }
+
+  &__sub-title {
+    font-size: 16px;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: ($line-height);
   }
 
   &__close {
@@ -86,13 +95,24 @@ $z-index-modal:               100 !default;
   }
 
   &__body {
-    padding: 0 10px;
+    padding: 0 55px;
     flex-grow: 1;
   }
 
   &__footer {
-    padding: 10px;
+    padding: 10px 10px 35px;
     flex-shrink: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #b5b5b5;
+    a {
+      color: #b5b5b5;
+      text-decoration: underline;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
   }
 
   &__backdrop {

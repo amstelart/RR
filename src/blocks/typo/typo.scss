@@ -381,3 +381,10 @@ pre {
   overflow-x: auto;
   tab-size: 2;
 }
+
+.l-60 {
+  max-width: 60%;
+  @media (max-width: ($menu-desktop-width - 1)) {
+    max-width: 100%;
+  }
+}

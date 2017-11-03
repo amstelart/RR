@@ -13,4 +13,47 @@
   &__item {}
   &__logo {}
 
+  &--row {
+    @include row;
+    #{$block-name}__card {
+      @include make-col(12);
+      @media (min-width: $screen-md) {
+        @include make-col(6);
+      }
+      @media (min-width: $screen-lg) {
+        @include make-col(4);
+      }
+      @media (min-width: $screen-xl) {
+        @include make-col(3);
+      }
+      margin-bottom: 25px;
+      position: relative;
+      &:hover,
+      &:focus {
+        #{$block-name}__overlay {
+          opacity: 1;
+        }
+      }
+    }
+    #{$block-name}__overlay {
+      background: rgba(227, 3, 19, 0.85);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: 0.5s;
+      .btn--outline-white {
+        &:hover,
+        &:focus {
+          background: #fff;
+          color: $color-main;
+        }
+      }
+    }
+  }
 }

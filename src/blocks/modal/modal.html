@@ -1,29 +1,45 @@
-<!--DEV
+<!-- DEV
 
 Для использования этого файла как шаблона:
 
 @ @include('blocks/modal/modal.html')
 
 (Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
+Подробнее: https://www.npmjs.com/package/gulp-file-include -->
 
 
 
-<div id="modal-demo" class="modal" tabindex="-1" role="dialog">
+<div id="modal-request" class="modal" tabindex="-1" role="dialog">
   <div class="modal__dialog" role="document">
     <div class="modal__content">
       <div class="modal__header">
         <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
-        <h4 class="modal__title">Modal</h4>
+        <h3 class="modal__title">Оставить щаявку</h3>
+        <p class="modal__sub-title">Наши менеджеры связутся с вами для уточнения деталей</p>
       </div>
       <div class="modal__body">
-        <p>Далеко-далеко за словесными горами...</p>
+        <form action="" class="form form--feedback form--modal" method="post">
+
+          <label class="field-text">
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" placeholder="Имя">
+            </span>
+          </label>
+          <label class="field-text">
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="tel" placeholder="Телефон">
+            </span>
+          </label>
+          <div class="field-btn">
+            <button class="btn btn--main">Оставить заявку</button>
+          </div>
+
+        </form>
       </div>
       <div class="modal__footer">
-        <button type="button" class="btn" data-dismiss="modal">Закрыть</button>
+        <p>Оставляя заявку вы соглашаетесь на обработку персональных данных.</p>
+        <a href="#">Политика конфиденциальности</a>
       </div>
     </div>
   </div>
 </div>
-
--->

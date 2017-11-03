@@ -77,6 +77,10 @@ body {
   outline: none !important; // stylelint-disable-line  declaration-no-important
 }
 
+.mm-slideout {
+  z-index: inherit;
+}
+
 // iOS 'clickable elements' fix for role='button'
 [role='button'] {
   cursor: pointer;
