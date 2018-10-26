@@ -7,17 +7,26 @@
   $block-name:                &; // #{$block-name}__element
 
   &__item {
+
+    h3 a {
+      color: #0645ad;
+      &:hover,
+      &:focus {
+        color: $color-main;
+      }
+    }
+
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
       li {
         margin-bottom: 8px;
-        color: #0645ad;
+        color: #000;
         padding: 3px 0;
         a {
           display: inline-block;
-          color: #0645ad;
+          color: #000;
 
           &:hover,
           &:focus {
